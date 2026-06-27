@@ -1,6 +1,8 @@
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    const screen = document.getElementById("access-screen");
-    if (screen) screen.classList.add("hidden");
-  }, 1200);
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', event => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth' });
+  });
 });

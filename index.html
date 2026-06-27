@@ -4,81 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>El Observador Incómodo</title>
-  <meta name="description" content="Sitio oficial de El Observador Incómodo. Archivos recuperados, publicaciones y observaciones de la vida corporativa." />
+  <meta name="description" content="Sitio oficial de El Observador Incómodo, un libro satírico-reflexivo sobre liderazgo, oficina y poder cotidiano." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="access-screen">
-    <div class="stamp">ACCESO AUTORIZADO</div>
-    <p>Autenticando archivo...</p>
-  </div>
-
-  <header class="topbar">
-    <div class="brand">
-      <div class="eye">◉</div>
-      <div>
-        <strong>EL OBSERVADOR</strong>
-        <strong>INCÓMODO</strong>
-      </div>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#inicio">El Observador Incómodo</a>
     <nav>
-      <a href="#expedientes">Expedientes</a>
-      <a href="#publicaciones">Publicaciones</a>
-      <a href="#observador">El Observador</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#libro">El libro</a>
+      <a href="#capitulos">Capítulos</a>
+      <a href="#autor">Autor</a>
     </nav>
   </header>
 
-  <main>
+  <main id="inicio">
     <section class="hero">
-      <div class="seal">ARCHIVO CENTRAL<br><span>CONFIDENCIAL</span></div>
-      <div class="hero-content">
-        <h1>EL OBSERVADOR<br>INCÓMODO</h1>
-        <p class="tagline">No es un libro de liderazgo.<br>Es un espejo.</p>
-        <a class="button" href="#publicaciones">Entrar al archivo</a>
-        <p class="small">Observamos lo que muchos callan. Documentamos lo que todos viven.</p>
+      <div class="hero-copy">
+        <p class="eyebrow">Manual satírico-reflexivo</p>
+        <h1>Para quienes sobreviven a la oficina sin perder la dignidad.</h1>
+        <p class="lead">Un libro sobre liderazgo, ego, correos innecesarios, reuniones eternas y pequeñas formas de poder que todos reconocen, aunque nadie quiera admitir.</p>
+        <div class="actions">
+          <a class="btn primary" href="#capitulos">Leer vista previa</a>
+          <a class="btn secondary" href="#libro">Conocer el proyecto</a>
+        </div>
+      </div>
+      <div class="book-card" aria-label="Portada conceptual del libro">
+        <div class="book-cover">
+          <span>El Observador</span>
+          <strong>Incómodo</strong>
+          <small>Cómo ser mamón sin dejar de ser profesional</small>
+        </div>
       </div>
     </section>
 
-    <section class="grid-section">
-      <article id="publicaciones" class="paper-card">
-        <span class="label">PUBLICACIONES</span>
-        <h2>¿Cómo ser mamón sin dejar de ser profesional?</h2>
-        <p>Manual satírico del liderazgo y la vida corporativa.</p>
-        <a class="button small-button" href="#" target="_blank" rel="noopener">Comprar en Amazon</a>
-        <p class="note">Cuando tengas el enlace de Amazon, lo colocamos aquí.</p>
-      </article>
-
-      <article id="expedientes" class="paper-card dossier">
-        <span class="label">ARCHIVOS RECUPERADOS</span>
-        <h2>Archivo Recuperado #1</h2>
-        <p>Manual para no ser manipulado por un profesional ambicioso.</p>
-        <a class="button small-button" href="bonus.html">Abrir expediente</a>
-        <div class="locked">Archivo Recuperado #2 · Próximamente</div>
-      </article>
-
-      <article id="observador" class="paper-card">
-        <span class="label">EL OBSERVADOR</span>
-        <blockquote>
-          Algunas personas escriben para enseñar.<br>
-          Otras para entretener.<br>
-          Yo escribo para observar aquello que todos vemos... pero pocos se atreven a señalar.
-        </blockquote>
-        <p class="signature">— El Observador Incómodo</p>
-      </article>
+    <section class="quote-strip">
+      <p>“La humildad nivel experto consiste en hablar de tus logros como si fueran trámites sencillos.”</p>
     </section>
 
-    <section id="contacto" class="contact">
-      <h2>CONTACTO</h2>
-      <p>Para sugerencias, colaboraciones o conferencias:</p>
-      <a href="mailto:contacto@elobservadorincomodo.com">contacto@elobservadorincomodo.com</a>
-      <p class="note">Podemos cambiar este correo si aún no lo vas a usar.</p>
+    <section id="libro" class="section two-col">
+      <div>
+        <p class="eyebrow">Sobre el libro</p>
+        <h2>Una sátira con traje formal.</h2>
+      </div>
+      <div>
+        <p><strong>El Observador Incómodo</strong> retrata esos comportamientos corporativos que se disfrazan de liderazgo, estrategia o profesionalismo, pero que muchas veces son simple ego con gafete.</p>
+        <p>No busca señalar nombres. Busca ponerle nombre a lo que todos han visto: el experto en todo, la reunión que pudo ser correo, el salvador institucional y el correo con copia a media humanidad.</p>
+      </div>
+    </section>
+
+    <section id="capitulos" class="section">
+      <p class="eyebrow">Vista previa</p>
+      <h2>Capítulos en desarrollo</h2>
+      <div class="cards">
+        <article>
+          <h3>El experto en todo</h3>
+          <p>Porque siempre hay alguien que sabe más del trabajo ajeno que quien lo hace todos los días.</p>
+        </article>
+        <article>
+          <h3>La reunión que pudo ser correo</h3>
+          <p>Un homenaje a esa tradición laboral de juntar gente para descubrir lo que ya estaba escrito.</p>
+        </article>
+        <article>
+          <h3>El correo con copia a todos</h3>
+          <p>Cuando informar deja de ser comunicar y empieza a convertirse en blindaje profesional.</p>
+        </article>
+        <article>
+          <h3>El síndrome del salvador</h3>
+          <p>La noble costumbre de apagar incendios que uno mismo ayudó a encender.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section manifesto">
+      <h2>No es un libro contra la oficina. Es contra la solemnidad innecesaria.</h2>
+      <p>Porque trabajar con seriedad no significa vivir sin humor. Y liderar personas no debería convertirse en un campeonato de importancia personal.</p>
+    </section>
+
+    <section id="autor" class="section two-col">
+      <div>
+        <p class="eyebrow">Autor</p>
+        <h2>Rafael Mosqueda Juárez</h2>
+      </div>
+      <div>
+        <p>Autor de una mirada incómodamente honesta sobre la vida profesional, el liderazgo cotidiano y las contradicciones que se esconden detrás de la palabra “estrategia”.</p>
+        <p>Este proyecto combina sátira, observación laboral y reflexión práctica para quienes han estado en una reunión pensando: “esto pudo resolverse en cinco minutos”.</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 El Observador Incómodo. Todos los derechos reservados.</p>
-    <p>Documento clasificado · Uso interno solamente</p>
+    <p>© 2026 El Observador Incómodo. Proyecto editorial en desarrollo.</p>
   </footer>
 
   <script src="script.js"></script>
